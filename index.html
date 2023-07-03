@@ -1,7 +1,100 @@
-<!DOCTYPE html>
-<html>
-	<title>domain test</title>
-</html>
-<body>
-	domain test
-</body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+	<HEAD>
+		<TITLE>
+			Michal's website
+		</TITLE>
+		<META name="description" content="My personal website made in 1999.">
+  		<META name="keywords" content="HTML, CSS, JavaScript, 1999">
+  		<META name="author" content="Michal Koczkodon">
+		<LINK rel="stylesheet" href="assets/styles.css">
+		<SCRIPT>
+			var probablyNetscape = !!document.layers && !!document.classes && !!document.ids;
+		</SCRIPT>
+	</HEAD>
+	<BODY style="background-image: url('assets/bg.gif')">
+		<DIV align="center">
+			<DIV class="page-wrapper">
+				<DIV align="left">
+					<DIV class="header">
+						<H1>Michal's Website</H1>
+						<DIV class="catchphrase">
+						<DIV id="catchphrase">
+							<ILAYER name="catchphrase">
+								Welcome to 1999!
+							</ILAYER>
+						</DIV>
+						<DIV class="netscape-catchphrase-bottom-margin">&nbsp;</DIV>
+						<DIV class="navigation">
+							<DIV class="tab-control-active" id="start-link" onClick="tabLinkClickHandler('start')">
+								<A href="#start" onClick="tabLinkClickHandler('start', true)">
+									Start
+								</A>
+							</DIV>
+							<DIV href="#about" class="tab-control" id="about-link" onClick="tabLinkClickHandler('about')">
+								<A href="#about" onClick="tabLinkClickHandler('about', true)">
+									About
+								</A>
+							</DIV>
+							<DIV  class="tab-control" id="contact-link" onClick="tabLinkClickHandler('contact')">
+								<A href="#contact" onClick="tabLinkClickHandler('contact', true)">
+									Contact
+								</A>
+							</DIV>
+						</DIV>
+						<DIV class="clearfix"></DIV>
+					</DIV>
+					<DIV class="main">
+						<ILAYER name="start" style="display: block;">
+							<DIV id="start">
+								<H2>Hello, time traveler!</H2>
+								<DIV class="text">
+									You're on the page, that could have been created in year 1999, and would work and look great on Intrnet Explorer 5 and almost great on Netscape Navigator 4.51 (two major browsers at the time).
+								</DIV>
+								<DIV class="text">
+									If you're interested in reading about the development process of this page, take a look at my article on medium.com: <I><A href="https://medium.com" target="_blank">How to create a personal website, but it's 1999</A></I> (published in July 2023). 
+								</DIV>
+								<DIV class="text">
+									You can check out the code on <A href="https://github.com/mihauco/1999-website" target="_blank">Github</A>. 
+								</DIV>
+								<DIV class="text"><B>GDPR Note:</B> This website does not collect, store, or process any personal data and it does not use any cookies, anyway, it is hosted on <A href="https://pages.github.com/" target="_blank">GitHub Pages</A>, so the <A href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Statement</A> applies.</DIV>
+							</DIV>
+						</ILAYER>
+						<ILAYER name="about" visibility="hide" top="-300" style="display: block;">
+							<DIV id="about">
+								<H2>About me...</H2>
+								<DIV class="bio">
+									<IMG id="face" src="assets/mk.jpg" width="100" height="100" class="face-image" alt="That's my face in the 2023"/>
+									<DIV class="bio-text">
+										<DIV class="text">
+											I'm Michal (pronounce: me-how). In the 1999 I was 10 years old and didn't know much about web development. Back then my favorite game was <I><A href="https://en.wikipedia.org/wiki/The_Prince_and_the_Coward" target="_blank">The Prince and The Coward</A></I>, I loved <I><A href="https://www.imdb.com/title/tt0120915/" target="_blank">Star Wars: Episode 1 - The Phantom Menace</A></I> movie and I wasn't much of a reader, but I believe the first book I read and enjoyed was <I><A href="https://blogs.bl.uk/european/2018/03/mr-inkblots-academy-a-polish-childrens-classic.html" target="_blank">Mr Inkblot's Academy</A></I> (by <A href="https://en.wikipedia.org/wiki/Jan_Brzechwa" target="_blank">Jan Brzechwa</A>).
+										</DIV>
+									</DIV>
+								</DIV>
+							</DIV>
+						</ILAYER>
+						<SCRIPT>
+							if (!probablyNetscape) {document.getElementById('about').style.display = 'none';}
+						</SCRIPT>
+						<ILAYER name="contact" visibility="hide" top="-600" style="display: block;">
+							<DIV id="contact">
+								<H2>Contact</H2>
+								<DIV class="text">
+									If you would like to reach out to me, try on <A href="https://twitter.com/mihauco" target="_blank">Twitter</A>, <A href="https://www.linkedin.com/in/mihauco/" target="_blank">LinkedIn</A> or send me an message at this special e-mail address: <a href="mailto:1999@mihau.co">1999@mihau.co</a>.
+								</DIV>
+							</DIV>
+						</ILAYER>
+						<SCRIPT>
+							if (!probablyNetscape) {document.getElementById('contact').style.display = 'none';}
+						</SCRIPT>
+					</DIV>
+					<DIV class="footer">
+						<DIV class="made-by">made by <A href="https://mihau.co" target="_blank">mihau</A></DIV>
+						<DIV class="copy">&copy; 1999</DIV>
+					</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+		<SCRIPT src="assets/scripts.js"></SCRIPT>
+	</BODY>
+</HTML>
